@@ -2,7 +2,7 @@
 
 import { Bell } from 'lucide-react'
 import { motion, AnimatePresence } from 'framer-motion'
-import { Link } from '@/i18n/routing'
+import { Link } from '@/i18n/navigation'
 import { getFirmState } from '@/lib/mock/data'
 
 export function NotificationBadge() {

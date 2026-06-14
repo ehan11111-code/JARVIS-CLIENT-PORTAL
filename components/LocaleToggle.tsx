@@ -1,7 +1,7 @@
 'use client'
 
 import { useLocale } from 'next-intl'
-import { usePathname, useRouter } from '@/i18n/routing'
+import { usePathname, useRouter } from '@/i18n/navigation'
 import { clsx } from 'clsx'
 
 export function LocaleToggle({ className }: { className?: string }) {

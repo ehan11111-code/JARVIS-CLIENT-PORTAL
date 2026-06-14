@@ -1,6 +1,6 @@
 'use client'
 
-import { Link } from '@/i18n/routing'
+import { Link } from '@/i18n/navigation'
 import { useLocale } from 'next-intl'
 import { ArrowUpRight } from 'lucide-react'
 import { motion } from 'framer-motion'
@@ -32,7 +32,7 @@ export function DeptHeatStrip({ departments, title, subtitle }: { departments: D
                 {d.name[locale]}
               </div>
               <div className="text-xs text-muted mt-1.5">
-                {d.solutions.length} · <span className={d.openExceptions > 0 ? 'text-accent font-medium' : ''}>{d.openExceptions}</span>
+                {d.solutions.length} Â· <span className={d.openExceptions > 0 ? 'text-accent font-medium' : ''}>{d.openExceptions}</span>
               </div>
             </Link>
           </motion.div>

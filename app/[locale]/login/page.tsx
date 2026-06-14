@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from 'react'
 import { useTranslations, useLocale } from 'next-intl'
-import { useRouter } from '@/i18n/routing'
+import { useRouter } from '@/i18n/navigation'
 import { motion } from 'framer-motion'
 import { BrandLogo } from '@/components/BrandLogo'
 import { DisplayHeading } from '@/components/DisplayHeading'
@@ -97,7 +97,7 @@ export default function LoginPage() {
 
       <footer className="relative z-10 px-6 md:px-10 py-5 flex items-center justify-between gap-3">
         <span className="text-xs text-muted">{tBrand('positioning')}</span>
-        <span className="text-xs text-muted">JARVIS · v0.demo</span>
+        <span className="text-xs text-muted">JARVIS Â· v0.demo</span>
       </footer>
     </div>
   )

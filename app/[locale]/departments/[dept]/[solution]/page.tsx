@@ -4,7 +4,7 @@ import { use } from 'react'
 import { useLocale, useTranslations } from 'next-intl'
 import { notFound } from 'next/navigation'
 import { motion } from 'framer-motion'
-import { Link } from '@/i18n/routing'
+import { Link } from '@/i18n/navigation'
 import { ArrowLeft, Clock } from 'lucide-react'
 import { PageShell } from '@/components/PageShell'
 import { DisplayHeading } from '@/components/DisplayHeading'
@@ -69,7 +69,7 @@ export default function SolutionPage({
         <StatusPulse status={solution.status} />
         <div className="inline-flex items-center gap-2 text-sm text-text-soft">
           <Clock className="h-3.5 w-3.5" strokeWidth={1.6} />
-          <span>{tCommon('lastRun')} · <span className="tabular-nums text-text">{solution.lastRun}</span></span>
+          <span>{tCommon('lastRun')} Â· <span className="tabular-nums text-text">{solution.lastRun}</span></span>
         </div>
         <div className="flex items-center gap-2 flex-wrap">
           <span className="text-xs text-muted">{tCommon('integratedSystems')}:</span>
@@ -111,7 +111,7 @@ export default function SolutionPage({
           <ArrowLeft className="h-3.5 w-3.5 flip-rtl" strokeWidth={1.6} />
           {t('backTo', { dept: dept.name[locale] })}
         </Link>
-        <span>{tCommon('moduleId')} · {solution.slug} · {tCommon('deployed')} {solution.deployedOn}</span>
+        <span>{tCommon('moduleId')} Â· {solution.slug} Â· {tCommon('deployed')} {solution.deployedOn}</span>
       </footer>
     </PageShell>
   )

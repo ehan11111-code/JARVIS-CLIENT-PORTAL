@@ -2,7 +2,7 @@
 
 import { useLocale, useTranslations } from 'next-intl'
 import { motion } from 'framer-motion'
-import { Link } from '@/i18n/routing'
+import { Link } from '@/i18n/navigation'
 import { ArrowUpRight } from 'lucide-react'
 import { PageShell } from '@/components/PageShell'
 import { DisplayHeading } from '@/components/DisplayHeading'

@@ -3,7 +3,7 @@
 import { useMemo, useState } from 'react'
 import { useLocale, useTranslations } from 'next-intl'
 import { motion, AnimatePresence } from 'framer-motion'
-import { Link } from '@/i18n/routing'
+import { Link } from '@/i18n/navigation'
 import { AlertOctagon, CheckCircle2, Eye, Info, RefreshCw, ArrowUpRight, Search, CheckCheck } from 'lucide-react'
 import { clsx } from 'clsx'
 import { PageShell } from '@/components/PageShell'
@@ -24,12 +24,12 @@ const TYPES: NotificationType[] = ['urgent', 'approval', 'attention', 'update', 
 function relTime(ts: string, locale: 'en' | 'ar') {
   const diff = Date.now() - new Date(ts).getTime()
   const m = Math.floor(diff / 60000)
-  if (m < 1) return locale === 'ar' ? 'الآن' : 'just now'
-  if (m < 60) return locale === 'ar' ? `قبل ${m} د` : `${m}m ago`
+  if (m < 1) return locale === 'ar' ? 'Ø§Ù„Ø¢Ù†' : 'just now'
+  if (m < 60) return locale === 'ar' ? `Ù‚Ø¨Ù„ ${m} Ø¯` : `${m}m ago`
   const h = Math.floor(m / 60)
-  if (h < 24) return locale === 'ar' ? `قبل ${h} س` : `${h}h ago`
+  if (h < 24) return locale === 'ar' ? `Ù‚Ø¨Ù„ ${h} Ø³` : `${h}h ago`
   const d = Math.floor(h / 24)
-  return locale === 'ar' ? `قبل ${d} يوم` : `${d}d ago`
+  return locale === 'ar' ? `Ù‚Ø¨Ù„ ${d} ÙŠÙˆÙ…` : `${d}d ago`
 }
 
 export default function NotificationsPage() {
@@ -90,7 +90,7 @@ export default function NotificationsPage() {
       >
         <div className="inline-flex items-center gap-2 rounded-full bg-accent-soft text-accent px-3 py-1 text-xs font-medium">
           <span className="inline-block h-1.5 w-1.5 rounded-full bg-accent animate-pulse" />
-          {t('eyebrow')} · {unread} {locale === 'ar' ? 'غير مقروء' : 'unread'}
+          {t('eyebrow')} Â· {unread} {locale === 'ar' ? 'ØºÙŠØ± Ù…Ù‚Ø±ÙˆØ¡' : 'unread'}
         </div>
         <DisplayHeading size="lg" className="mt-3" locale={locale}>
           {t('headline')}

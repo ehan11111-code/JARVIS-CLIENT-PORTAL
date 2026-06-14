@@ -1,6 +1,6 @@
 'use client'
 
-import { Link, usePathname } from '@/i18n/routing'
+import { Link, usePathname } from '@/i18n/navigation'
 import { useTranslations, useLocale } from 'next-intl'
 import { clsx } from 'clsx'
 import { LayoutDashboard, Network, GraduationCap, Mail, ChevronDown, Bell, Beef } from 'lucide-react'

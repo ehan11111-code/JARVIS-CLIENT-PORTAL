@@ -2,7 +2,7 @@
 
 import { useLocale, useTranslations } from 'next-intl'
 import { motion } from 'framer-motion'
-import { Link } from '@/i18n/routing'
+import { Link } from '@/i18n/navigation'
 import { ArrowUpRight, Info } from 'lucide-react'
 import { clsx } from 'clsx'
 import type { AssistantAction, AssistantCard, AssistantReply } from '@/lib/assistant'
