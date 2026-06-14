@@ -1,7 +1,20 @@
-import createMiddleware from 'next-intl/middleware'
-import { routing } from './i18n/routing'
+import { NextRequest, NextResponse } from 'next/server'
 
-export default createMiddleware(routing)
+const LOCALES = ['en', 'ar'] as const
+const DEFAULT_LOCALE = 'en'
+
+export default function middleware(request: NextRequest) {
+  const { pathname } = request.nextUrl
+
+  const hasLocale = LOCALES.some(
+    (l) => pathname === `/${l}` || pathname.startsWith(`/${l}/`)
+  )
+  if (hasLocale) return NextResponse.next()
+
+  const url = request.nextUrl.clone()
+  url.pathname = `/${DEFAULT_LOCALE}${pathname === '/' ? '' : pathname}`
+  return NextResponse.redirect(url)
+}
 
 export const config = {
   matcher: ['/((?!api|_next|_vercel|.*\\..*).*)']
