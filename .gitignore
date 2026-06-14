@@ -12,3 +12,5 @@ brand_kit_extracted
 *.zip
 .vercel
 next-env.d.ts
+Screenshot_*.png
+*.screenshot.png
