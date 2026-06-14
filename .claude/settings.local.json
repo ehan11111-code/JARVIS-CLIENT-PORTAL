@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "PowerShell($src = \"c:\\\\Users\\\\anmar\\\\Documents\\\\AG-CL-JARVIS.project\\\\brand_kit_extracted\\\\jarvis-brand-agent-kit\"; $proj = \"c:\\\\Users\\\\anmar\\\\Documents\\\\AG-CL-JARVIS.project\"; New-Item -ItemType Directory -Force -Path \"$proj\\\\public\\\\assets\" | Out-Null; Copy-Item \"$src\\\\assets\\\\jarvis-ai-logo-reference.jpeg\" \"$proj\\\\public\\\\assets\\\\jarvis-ai-logo-reference.jpeg\"; Copy-Item \"$src\\\\CLAUDE.md\" \"$proj\\\\CLAUDE.md\"; Get-ChildItem \"$proj\\\\public\\\\assets\",\"$proj\\\\CLAUDE.md\" | Select-Object FullName,Length)",
+      "PowerShell(npm install --no-audit --no-fund --loglevel=error 2>&1)",
+      "PowerShell(try { $r = Invoke-WebRequest -Uri \"http://localhost:3000/\" -MaximumRedirection 0 -ErrorAction SilentlyContinue } catch { $r = $_.Exception.Response }; \"Root status: $\\($r.StatusCode\\) location: $\\($r.Headers.Location\\)\"; Start-Sleep -Seconds 1; try { $r2 = Invoke-WebRequest -Uri \"http://localhost:3000/en/login\" -ErrorAction Stop -UseBasicParsing } catch { \"Login error: $\\($_.Exception.Message\\)\"; $r2 = $null }; if \\($r2\\) { \"Login status: $\\($r2.StatusCode\\) bytes: $\\($r2.Content.Length\\)\" })"
+    ]
+  }
+}

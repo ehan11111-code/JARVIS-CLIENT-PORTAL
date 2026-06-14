@@ -1,0 +1,299 @@
+{
+  "brand": {
+    "name": "JARVIS AI",
+    "tagline": "Intelligent operations, engineered.",
+    "positioning": "Engineered in Saudi. Used globally."
+  },
+  "nav": {
+    "operations": "Operations",
+    "controlCenter": "Control center",
+    "departments": "Departments",
+    "notifications": "Notifications",
+    "meatIntel": "Meat Intel",
+    "academy": "Academy",
+    "contact": "Contact",
+    "signOut": "Sign out",
+    "language": "Language"
+  },
+  "mec": {
+    "name": "Meat Intel",
+    "eyebrow": "Meat Intelligence",
+    "tagline": "Buy at the right moment. Wait when you should.",
+    "subnav": {
+      "dashboard": "Dashboard",
+      "requestReport": "Request a report",
+      "priceExplorer": "Price explorer",
+      "crisisFeed": "Crisis & alerts",
+      "myReports": "My reports",
+      "adminSources": "Sources (admin)"
+    },
+    "dashboard": {
+      "headline": "Meat market overview",
+      "subline": "Live FOB prices across origins, freight signals, the latest crisis feed and your active verdict.",
+      "currentPrices": "Current prices",
+      "currentPricesSub": "USD per kg from each origin, with the SAR equivalent and week-over-week change.",
+      "verdict": "Today's verdict",
+      "verdictSub": "Sweet-timing call based on price bands, crisis state and freight.",
+      "freight": "Freight signals",
+      "freightSub": "Container rates and transit days into Jeddah and Dammam.",
+      "topCrisis": "Top crisis & alerts",
+      "fxBadge": "FX",
+      "noVerdict": "Pick a meat and cut from the dashboard to see today's verdict."
+    },
+    "request": {
+      "headline": "Request a report",
+      "subline": "Pick meat, cut, origins and destination — the agent runs the comparison and produces a bilingual PDF.",
+      "meat": "Meat",
+      "cut": "Cut",
+      "countries": "Origin countries",
+      "destPort": "Destination port",
+      "note": "Optional note for your engineer",
+      "submit": "Generate report",
+      "waiting": "Waiting in queue…",
+      "generating": "Agent is running the comparison…",
+      "done": "Report ready",
+      "openPdf": "Download PDF",
+      "newRequest": "New request",
+      "errorPick": "Choose at least one country and a meat + cut."
+    },
+    "priceExplorer": {
+      "headline": "Price explorer",
+      "subline": "90-day USD/kg history for any cut from any origin, with the price band overlaid.",
+      "trend": "Price trend (USD/kg)",
+      "band": "90-day band",
+      "p25": "p25",
+      "p50": "Median",
+      "p75": "p75",
+      "samples": "samples",
+      "today": "Today",
+      "noData": "No price history for this combination yet."
+    },
+    "crisis": {
+      "headline": "Crisis & alerts",
+      "subline": "Everything our agents picked up that could move the market — newest first.",
+      "filterSeverity": "Severity",
+      "filterCountry": "Country",
+      "filterCategory": "Category",
+      "severity": "Severity",
+      "source": "Source",
+      "categories": {
+        "crisis": "Crisis",
+        "policy": "Policy",
+        "disease": "Disease",
+        "freight": "Freight",
+        "market": "Market"
+      }
+    },
+    "myReports": {
+      "headline": "My reports",
+      "subline": "Every report you've requested, web and WhatsApp, with verdict and PDF.",
+      "table": {
+        "date": "Date",
+        "request": "Request",
+        "verdict": "Verdict",
+        "channel": "Channel",
+        "pdf": "PDF",
+        "status": "Status"
+      },
+      "empty": "You haven't requested a report yet."
+    },
+    "admin": {
+      "headline": "Sources & scrapers",
+      "subline": "Manage the data sources your reports are built from. Toggle active, trigger manual scrapes, watch health.",
+      "table": {
+        "source": "Source",
+        "country": "Country",
+        "meat": "Meat",
+        "cut": "Cut",
+        "scraper": "Scraper",
+        "lastFetched": "Last fetched",
+        "health": "Health",
+        "active": "Active"
+      },
+      "scrapeNow": "Run scrape now",
+      "scrapeQueued": "Scrape queued · demo only",
+      "healthOk": "OK",
+      "healthStale": "Stale",
+      "healthFailing": "Failing",
+      "filter": "Filter",
+      "all": "All",
+      "adminToggle": "Admin mode",
+      "adminToggleHelp": "Enables Sources management. Demo-only — no real permissions."
+    },
+    "whatsapp": {
+      "title": "WhatsApp notifications",
+      "body": "When a report finishes, also send the bilingual summary to your WhatsApp number.",
+      "label": "WhatsApp number",
+      "save": "Save preference",
+      "saved": "Saved · we'll also notify your WhatsApp.",
+      "off": "WhatsApp notifications off."
+    },
+    "verdicts": {
+      "BUY_NOW": "Buy now",
+      "BUY_THIS_WEEK": "Buy this week",
+      "NEUTRAL": "Neutral",
+      "WAIT_4_8": "Wait 4–8 weeks",
+      "WAIT_CRISIS": "Wait — crisis",
+      "BUY_NOW_desc": "Today is the cheapest window we've seen in 90 days.",
+      "BUY_THIS_WEEK_desc": "Below the 90-day median. Strong window to commit.",
+      "NEUTRAL_desc": "Around the median. No clear advantage either way.",
+      "WAIT_4_8_desc": "Above the median. Expect a better window in 4–8 weeks.",
+      "WAIT_CRISIS_desc": "Active supply crisis. Hold and watch the feed."
+    },
+    "channels": {
+      "web": "Web",
+      "whatsapp": "WhatsApp"
+    },
+    "actions": {
+      "viewAll": "View all",
+      "open": "Open report"
+    }
+  },
+  "assistant": {
+    "name": "Jarvis",
+    "tagline": "Your operations assistant",
+    "openLabel": "Ask Jarvis",
+    "closeLabel": "Close assistant",
+    "placeholder": "Ask about your operations, Meat Intel, or settings…",
+    "send": "Send",
+    "thinking": "Jarvis is thinking…",
+    "clear": "New conversation",
+    "scopeNote": "I keep to business operations, Meat Intel, and portal settings.",
+    "starters": "Try one of these",
+    "online": "Online",
+    "actionApplied": "Done."
+  },
+  "notifications": {
+    "eyebrow": "Inbox",
+    "headline": "Notifications",
+    "subline": "Everything that needs your attention, grouped and filterable. Mark as read once you've acted.",
+    "filterAll": "All",
+    "filterUnread": "Unread",
+    "typeAll": "All types",
+    "deptAll": "All departments",
+    "markAll": "Mark all as read",
+    "empty": "Nothing here. You're all caught up.",
+    "open": "Open",
+    "types": {
+      "urgent": "Urgent",
+      "approval": "Approval",
+      "attention": "Needs attention",
+      "update": "Update",
+      "info": "Info"
+    },
+    "search": "Search"
+  },
+  "common": {
+    "demoBanner": "Demo workspace",
+    "open": "Open",
+    "back": "Back",
+    "lastRun": "Last run",
+    "deployed": "Deployed",
+    "moduleId": "Module",
+    "integratedSystems": "Connected",
+    "solutionContext": "Context",
+    "approve": "Approve",
+    "override": "Override",
+    "reject": "Reject",
+    "confidence": "confidence",
+    "session": "Signed in",
+    "buildTag": "JARVIS · v0.demo"
+  },
+  "status": {
+    "running": "Live",
+    "awaiting_approval": "Awaiting approval",
+    "exception": "Needs attention",
+    "blocked": "Paused",
+    "allOnline": "All departments online"
+  },
+  "outcome": {
+    "cleared": "Cleared",
+    "escalated": "Escalated",
+    "rejected": "Rejected",
+    "pending": "Pending"
+  },
+  "login": {
+    "eyebrow": "System ready",
+    "headline": "Welcome back",
+    "subline": "Sign in to your operations workspace and review what Jarvis is running across your departments.",
+    "email": "Email",
+    "password": "Password",
+    "submit": "Sign in",
+    "demoHelper": "Demo environment · any email and password will work.",
+    "errorRequired": "Please enter your email and password.",
+    "footnote": "Engineered in Saudi. Used globally."
+  },
+  "control": {
+    "eyebrow": "All systems live",
+    "headline": "Operations overview",
+    "subline": "A single, calm view of every Jarvis module running across your company today.",
+    "kpis": {
+      "workflows": "Live workflows",
+      "decisions": "Decisions today",
+      "exceptions": "Open exceptions",
+      "interventions": "Need your input",
+      "integrated": "Connected systems",
+      "latency": "Avg response"
+    },
+    "deptHeat": "Departments",
+    "deptHeatSub": "Status at a glance · select one to dive in.",
+    "executionLog": "Recent activity",
+    "executionLogSub": "What Jarvis has been doing across departments.",
+    "interventionsRequired": "Needs your input",
+    "interventionsRequiredSub": "Decisions waiting on a human.",
+    "trend": "Decisions vs exceptions · last 7 days",
+    "noInterventions": "Nothing waiting. You're clear."
+  },
+  "depts": {
+    "indexHeadline": "Departments",
+    "indexEyebrow": "Map",
+    "indexSubline": "Eleven departments running on autonomous operational architecture. Open one to see what's live.",
+    "running": "live",
+    "solutions": "Modules",
+    "openExceptions": "Open exceptions"
+  },
+  "dept": {
+    "eyebrow": "Department",
+    "kpiRow": "Department snapshot",
+    "modules": "Live modules",
+    "activity": "Recent activity",
+    "activitySub": "Latest events across this department.",
+    "charts": "Trends",
+    "workflowsLive": "workflows live",
+    "integratedSystems": "connected systems",
+    "lastSync": "last sync"
+  },
+  "solution": {
+    "eyebrow": "Module",
+    "statusHeader": "Status",
+    "kpiRow": "Snapshot",
+    "decisions": "Decisions issued",
+    "decisionsSub": "Recent autonomous decisions made by this module.",
+    "interventions": "Needs your input",
+    "interventionsSub": "Items the module flagged for a human review.",
+    "workflow": "How it's wired",
+    "workflowSub": "Data sources, the Jarvis agent, integrations and outputs.",
+    "activity": "Activity log",
+    "backTo": "Back to {dept}",
+    "actionApplied": "Done · recorded in this demo workspace."
+  },
+  "academy": {
+    "eyebrow": "Academy",
+    "headline": "Train your team alongside the system",
+    "subline": "Short, practical modules that help your people work confidently with Jarvis.",
+    "launch": "Open",
+    "duration": "min",
+    "comingSoon": "Module preview isn't available in this demo build. Your Jarvis engineer can enable it for you."
+  },
+  "contact": {
+    "eyebrow": "Talk to your engineer",
+    "headline": "Request an operational review",
+    "subline": "Send a note to the Jarvis engineer assigned to your deployment.",
+    "name": "Your name",
+    "company": "Module or area",
+    "message": "What's on your mind?",
+    "submit": "Send request",
+    "success": "Got it. Your Jarvis engineer will reply within one business day.",
+    "demoHelper": "Demo environment · this form doesn't actually send."
+  }
+}
