@@ -36,7 +36,7 @@ export function SolutionStatusCard({
         </div>
         <h3 className="text-base font-semibold text-text leading-snug">{solution.name[locale]}</h3>
         <p className="text-xs text-muted mt-2">
-          {t('lastRun')} Â· <span className="tabular-nums">{solution.lastRun}</span>
+          {t('lastRun')} · <span className="tabular-nums">{solution.lastRun}</span>
         </p>
         {primary && (
           <div className="mt-5 pt-4 border-t border-border flex items-end justify-between gap-3">

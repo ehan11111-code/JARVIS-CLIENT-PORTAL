@@ -15,7 +15,7 @@ export default function LocaleIndex() {
 
   return (
     <div className="min-h-screen flex items-center justify-center bg-bg">
-      <div className="text-sm text-muted animate-pulse">Loadingâ€¦</div>
+      <div className="text-sm text-muted animate-pulse">Loading…</div>
     </div>
   )
 }

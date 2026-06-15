@@ -11,7 +11,7 @@ import { Panel } from './Panel'
 export function DeptHeatStrip({ departments, title, subtitle }: { departments: Department[]; title?: string; subtitle?: string }) {
   const locale = useLocale() as 'en' | 'ar'
   return (
-    <Panel title={title} subtitle={subtitle} bodyClassName="p-2 md:p-3">
+    <Panel title={title} subtitle={subtitle} bodyClassName="p-2 md:p-3" showRefresh>
       <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 xl:grid-cols-6 gap-2">
         {departments.map((d, i) => (
           <motion.div
@@ -32,7 +32,7 @@ export function DeptHeatStrip({ departments, title, subtitle }: { departments: D
                 {d.name[locale]}
               </div>
               <div className="text-xs text-muted mt-1.5">
-                {d.solutions.length} Â· <span className={d.openExceptions > 0 ? 'text-accent font-medium' : ''}>{d.openExceptions}</span>
+                {d.solutions.length} · <span className={d.openExceptions > 0 ? 'text-accent font-medium' : ''}>{d.openExceptions}</span>
               </div>
             </Link>
           </motion.div>

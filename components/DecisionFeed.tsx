@@ -23,7 +23,7 @@ export function DecisionFeed({ decisions, locale, title, subtitle }: { decisions
   const tCommon = useTranslations('common')
 
   return (
-    <Panel title={title} subtitle={subtitle} bodyClassName="px-0 pb-0">
+    <Panel title={title} subtitle={subtitle} bodyClassName="px-0 pb-0" showRefresh>
       <ul className="divide-y divide-border">
         {decisions.map((d, i) => (
           <motion.li

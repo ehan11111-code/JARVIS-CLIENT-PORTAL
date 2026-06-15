@@ -11,7 +11,7 @@ import type { FreightLane } from '@/lib/mock/mec-types'
 export function FreightStrip({ freight, title, subtitle }: { freight: FreightLane[]; title?: string; subtitle?: string }) {
   const locale = useLocale() as 'en' | 'ar'
   return (
-    <Panel title={title} subtitle={subtitle}>
+    <Panel title={title} subtitle={subtitle} showRefresh>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
         {freight.map((lane, i) => {
           const country = COUNTRIES.find((c) => c.code === lane.origin_country)!

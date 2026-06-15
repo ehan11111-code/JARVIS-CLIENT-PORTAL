@@ -20,7 +20,7 @@ export function AuthGate({ children }: { children: React.ReactNode }) {
   if (!ready) {
     return (
       <div className="min-h-screen flex items-center justify-center bg-bg">
-        <div className="text-sm text-muted animate-pulse">Loading workspaceâ€¦</div>
+        <div className="text-sm text-muted animate-pulse">Loading workspace…</div>
       </div>
     )
   }

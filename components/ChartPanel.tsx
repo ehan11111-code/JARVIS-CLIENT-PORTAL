@@ -33,7 +33,7 @@ export function ChartPanel({ chart, locale, height = 240, title }: { chart: Char
   })
 
   return (
-    <Panel title={title ?? chart.title[locale]}>
+    <Panel title={title ?? chart.title[locale]} showRefresh>
       <div style={{ height }}>
         {mounted && (
           <ResponsiveContainer width="100%" height="100%">

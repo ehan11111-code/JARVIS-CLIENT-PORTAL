@@ -59,6 +59,7 @@ export function SourcesTable({ sources, title, subtitle }: { sources: Source[]; 
     <Panel
       title={title}
       subtitle={subtitle}
+      showRefresh
       action={
         <div className="flex items-center gap-2">
           <Select label={t('table.country')} value={countryFilter} onChange={setCountryFilter}>

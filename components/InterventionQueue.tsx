@@ -38,7 +38,7 @@ export function InterventionQueue({
   }
 
   return (
-    <Panel title={title} subtitle={subtitle} bodyClassName="px-0 pb-0">
+    <Panel title={title} subtitle={subtitle} bodyClassName="px-0 pb-0" showRefresh>
       {interventions.length === 0 && (
         <p className="px-5 md:px-6 py-8 text-sm text-muted text-center">{tCtrl('noInterventions')}</p>
       )}

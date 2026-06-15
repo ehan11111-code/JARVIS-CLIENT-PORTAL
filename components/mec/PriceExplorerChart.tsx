@@ -40,7 +40,7 @@ export function PriceExplorerChart({
   const p = paletteFor(theme)
 
   return (
-    <Panel title={title} subtitle={subtitle}>
+    <Panel title={title} subtitle={subtitle} showRefresh>
       <div style={{ height }}>
         {mounted && history.length > 0 && (
           <ResponsiveContainer width="100%" height="100%">

@@ -34,7 +34,7 @@ export function WorkflowDiagram({ workflow, title, subtitle }: { workflow: Workf
   }, [workflow.nodes])
 
   return (
-    <Panel title={title} subtitle={subtitle}>
+    <Panel title={title} subtitle={subtitle} showRefresh>
       <div className="relative grid grid-cols-4 gap-3 md:gap-5 [direction:ltr]">
         {[0, 1, 2, 3].map((c, ci) => {
           const kind = Object.keys(COLS).find((k) => COLS[k] === c)!

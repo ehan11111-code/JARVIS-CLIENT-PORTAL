@@ -23,7 +23,7 @@ export function ActivityTrail({
   maxHeight?: number
 }) {
   return (
-    <Panel title={title} subtitle={subtitle} bodyClassName="px-0 pb-0">
+    <Panel title={title} subtitle={subtitle} bodyClassName="px-0 pb-0" showRefresh>
       <ul
         className="divide-y divide-border overflow-y-auto scrollbar-soft"
         style={maxHeight ? { maxHeight } : undefined}

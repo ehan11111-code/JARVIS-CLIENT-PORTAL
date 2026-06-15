@@ -50,6 +50,7 @@ export default function MecDashboard() {
           <VerdictCard verdict={verdict} title={tDash('verdict')} subtitle={tDash('verdictSub')} />
           <Panel
             title={tDash('topCrisis')}
+            showRefresh
             action={
               <Link
                 href="/meat-intel/crisis-feed"

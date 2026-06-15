@@ -40,6 +40,7 @@ export function PriceGrid({
     <Panel
       title={title}
       subtitle={subtitle}
+      showRefresh
       action={
         <div className="flex items-center gap-1 rounded-full border border-border bg-bg-soft p-0.5">
           {MEATS.map((m) => (

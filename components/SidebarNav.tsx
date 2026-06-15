@@ -3,7 +3,7 @@
 import { Link, usePathname } from '@/i18n/navigation'
 import { useTranslations, useLocale } from 'next-intl'
 import { clsx } from 'clsx'
-import { LayoutDashboard, Network, GraduationCap, Mail, ChevronDown, Bell, Beef } from 'lucide-react'
+import { LayoutDashboard, Network, GraduationCap, Mail, ChevronDown, Bell, Beef, Coins } from 'lucide-react'
 import { BrandLogo } from './BrandLogo'
 import { departmentSeeds } from '@/lib/mock/catalog'
 import { getFirmState } from '@/lib/mock/data'
@@ -55,6 +55,7 @@ export function SidebarNav() {
         { href: '/meat-intel/admin-sources', label: tMec('adminSources') }
       ]
     },
+    { href: '/total-savings', label: t('totalSavings'), icon: Coins },
     { href: '/notifications', label: t('notifications'), icon: Bell, badge: unread },
     { href: '/jarvis-academy', label: t('academy'), icon: GraduationCap },
     { href: '/contact', label: t('contact'), icon: Mail }

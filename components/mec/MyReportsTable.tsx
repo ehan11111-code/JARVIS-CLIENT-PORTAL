@@ -16,14 +16,14 @@ export function MyReportsTable({ reports, title, subtitle }: { reports: Report[]
 
   if (reports.length === 0) {
     return (
-      <Panel title={title} subtitle={subtitle}>
+      <Panel title={title} subtitle={subtitle} showRefresh>
         <p className="text-sm text-muted py-8 text-center">{t('empty')}</p>
       </Panel>
     )
   }
 
   return (
-    <Panel title={title} subtitle={subtitle} bodyClassName="px-0 pb-0">
+    <Panel title={title} subtitle={subtitle} bodyClassName="px-0 pb-0" showRefresh>
       <ul className="divide-y divide-border">
         {reports.map((r, i) => {
           const meatName = MEATS.find((m) => m.slug === r.meat)?.name[locale]
